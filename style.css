@@ -320,7 +320,12 @@ text-align:center;
   flex-direction: column;
   align-items: center;
 }
-
+.destinations .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px 12px 0 0;
+}
 .feature-box,
 .testimonial-card,
 .footer-box {
@@ -354,12 +359,7 @@ html {
     gap:20px;
 }
 
-.destinations .card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px 12px 0 0;
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -382,4 +382,25 @@ img {
     max-width: 100%;
     height: 250px;
     object-fit: cover;
+}
+/* Destination Images Fix */
+.destinations .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.destinations .card {
+    overflow: hidden;
+}
+
+@media (min-width: 769px) {
+    .destinations .card {
+        width: 300px;
+    }
+
+    .destinations .card img {
+        height: 220px;
+    }
 }
