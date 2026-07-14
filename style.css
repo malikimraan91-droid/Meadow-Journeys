@@ -197,3 +197,42 @@ text-align:center;
   clear: both;
   z-index: 2;
 }
+/* Part 4C - Enquiry Form */
+
+.enquiry {
+  padding: 60px 20px;
+  text-align: center;
+  clear: both;
+}
+
+.enquiry h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.enquiry form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.enquiry input,
+.enquiry textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.enquiry textarea {
+  height: 120px;
+}
+
+.enquiry button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
