@@ -20,10 +20,10 @@ color:white;
 }
 
 .logo img {
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 }
 
