@@ -212,13 +212,13 @@ Family Tours and Adventure Trips.
 
 <p>Fill the details and our team will contact you soon.</p>
 
-<form>
+<form onsubmit="sendWhatsApp(); return false;">
 
-<input type="text" placeholder="Your Name" required>
+<input id="name" type="text" placeholder="Your Name" required>
 
-<input type="tel" placeholder="Phone Number" required>
+<input id="phone" type="tel" placeholder="Phone Number" required>
 
-<textarea placeholder="Your Message"></textarea>
+<textarea id="message" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Enquiry</button>
 
@@ -278,5 +278,24 @@ comfortable stays, transportation and complete travel assistance.
   
 💬
 </a>
+    <script>
+
+function sendWhatsApp(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let message = document.getElementById("message").value;
+
+let text = 
+"Hello Meadow Journeys,%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Message: " + message;
+
+window.open("https://wa.me/919622843919?text=" + text, "_blank");
+
+}
+
+</script>
 </body>
 </html>
