@@ -320,12 +320,7 @@ text-align:center;
   flex-direction: column;
   align-items: center;
 }
-.destinations .card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px 12px 0 0;
-}
+
 .feature-box,
 .testimonial-card,
 .footer-box {
@@ -365,31 +360,13 @@ img {
     height: auto;
 }
 
-@media (min-width: 768px) {
-    .your-image-class {
-        max-width: 500px;
-        height: auto;
-    }
-}
-    .destinations .card img {
-    width: 100%;
-    max-width: 300px;
-    height: 220px;
-    object-fit: cover;
-}
 
 .gallery img {
     max-width: 100%;
     height: 250px;
     object-fit: cover;
 }
-/* Destination Images Fix */
-.destinations .card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-}
+
 
 .destinations .card {
     overflow: hidden;
@@ -406,26 +383,20 @@ img {
 }
 /* FINAL IMAGE SIZE FIX */
 
-.destinations .card {
-    width: 300px;
+.destinations .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
-.destinations .card img {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
-    display: block;
+.destinations .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px 12px 0 0;
 }
 
-@media (max-width:768px) {
-
-    .destinations .card {
-        width: 100%;
-    }
-
-    .destinations .card img {
-        width: 100%;
-        height: 220px;
-    }
-
+.destinations .card{
+    overflow:hidden;
+}
 }
