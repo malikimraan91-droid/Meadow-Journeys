@@ -313,32 +313,3 @@ text-align:center;
 .gallery-grid {
   grid-template-columns: 1fr;
 }
-
-.features,
-.testimonial-container,
-.footer-container {
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature-box,
-.testimonial-card,
-.footer-box {
-  width: 90%;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-}
-
-
-
-
-
-
