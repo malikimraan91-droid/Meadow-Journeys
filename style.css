@@ -171,3 +171,29 @@ padding:80px 20px;
 background:white;
 text-align:center;
 }
+.why-us {
+  position: relative;
+  width: 100%;
+  display: block;
+  clear: both;
+  padding: 60px 20px;
+  margin-top: 50px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-box {
+  position: relative;
+}
+
+.gallery,
+.reviews,
+.contact {
+  position: relative;
+  clear: both;
+  z-index: 2;
+}
