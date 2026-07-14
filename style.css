@@ -20,11 +20,10 @@ color:white;
 }
 
 .logo img {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
-    margin-right: 10px;
-}
+    margin-right: 8px;
 }
 
 nav {
@@ -119,6 +118,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex: 1;
 }
 
 .logo img {
@@ -134,11 +134,8 @@ nav {
     margin-top: 0;
 }
 
-}
-
 .hero h1{
 font-size:40px;
-}
 }
 .destinations,
 .packages{
