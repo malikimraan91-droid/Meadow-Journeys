@@ -310,3 +310,10 @@ h2 {
 }
 
 }
+.review-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
