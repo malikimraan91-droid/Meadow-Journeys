@@ -19,11 +19,18 @@ background:#0b3d91;
 color:white;
 }
 
-.logo img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  margin-right: 8px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a{
