@@ -33,7 +33,7 @@ font-weight:500;
 
 .hero{
 height:90vh;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=1600&q=80");
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("dal lake.jpg") centre/cover no-repeat;
 background-size:cover;
 background-position:center;
 display:flex;
