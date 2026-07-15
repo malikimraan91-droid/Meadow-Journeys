@@ -607,3 +607,30 @@ nav a{
         opacity:1;
     }
 }
+.call-float{
+    position: fixed;
+    bottom: 95px;
+    right: 20px;
+    width: 58px;
+    height: 58px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.call-float:hover{
+    transform: scale(1.1);
+    background: #0056b3;
+}
+
+.call-float i{
+    color: white;
+}
