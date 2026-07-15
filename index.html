@@ -53,8 +53,8 @@
 
 <p>Your trusted Kashmir travel partner for memorable holidays, comfortable stays and 24/7 assistance.</p>
 
-<a href="https://wa.me/919622843919" class="btn">
-Book Now
+<a href="#" class="btn" onclick="openBookingPopup(); return false;">
+    Book Now
 </a>
 
 </div>
@@ -198,6 +198,22 @@ Family Tours and Adventure Trips.
 </section>
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img">
+</div>
+    <div class="booking-popup" id="bookingPopup">
+    <div class="booking-box">
+        <span class="close-popup" onclick="closeBookingPopup()">&times;</span>
+
+        <h2>Book Your Kashmir Tour</h2>
+
+        <input type="text" id="bname" placeholder="Full Name">
+        <input type="tel" id="bphone" placeholder="Phone Number">
+        <input type="text" id="bdestination" placeholder="Destination">
+        <input type="date" id="bdate">
+        <input type="number" id="bpersons" placeholder="Number of Travellers">
+        <textarea id="bmessage" placeholder="Special Requirements"></textarea>
+
+        <button onclick="sendBooking()">Send on WhatsApp</button>
+    </div>
 </div>
 <!-- Reviews -->
 <section class="reviews">
