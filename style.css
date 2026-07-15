@@ -695,3 +695,17 @@ nav a{
     font-size:28px;
     cursor:pointer;
 }
+.booking-box input,
+.booking-box textarea,
+.booking-box button{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.booking-box input[type="date"]{
+    width:100%;
+    min-height:48px;
+    -webkit-appearance:none;
+    appearance:none;
+    font-size:16px;
+}
