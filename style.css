@@ -443,3 +443,77 @@ html {
     font-size: 16px;
   }
 }
+/* ===========================
+   MOBILE RESPONSIVE - PART 2
+=========================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Destinations & Packages */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .destinations .card img,
+  .gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Reviews */
+  .reviews .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Enquiry Form */
+  .enquiry form {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .enquiry input,
+  .enquiry textarea,
+  .enquiry button {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-box {
+    max-width: 100%;
+  }
+
+  /* Floating WhatsApp */
+  .whatsapp {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
