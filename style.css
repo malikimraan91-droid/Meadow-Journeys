@@ -707,3 +707,45 @@ nav a{
     min-height:48px;
     font-size:16px;
 }
+.review-slider{
+    overflow:hidden;
+    width:100%;
+}
+
+.review-slider .cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    animation:reviewSlide 15s linear infinite;
+}
+
+.review-slider .cards:hover{
+    animation-play-state:paused;
+}
+
+@keyframes reviewSlide{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-325px * 3));
+    }
+}
+
+@media (max-width:768px){
+
+    .review-slider .card{
+        min-width:85%;
+        flex:0 0 85%;
+    }
+
+    @keyframes reviewSlide{
+        0%{
+            transform:translateX(0);
+        }
+        100%{
+            transform:translateX(calc(-90% * 2));
+        }
+    }
+}
