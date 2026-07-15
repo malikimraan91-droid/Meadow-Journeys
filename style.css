@@ -818,3 +818,12 @@ margin:20px auto 0;
 }
 
 }
+.destinations,
+.packages{
+text-align:center;
+}
+
+.destinations h2,
+.packages h2{
+text-align:center;
+}
