@@ -827,3 +827,18 @@ text-align:center;
 .packages h2{
 text-align:center;
 }
+@media (max-width:600px){
+
+.destinations,
+.packages{
+    width:100%;
+    text-align:center;
+}
+
+.destinations h2,
+.packages h2{
+    text-align:center;
+    width:100%;
+}
+
+}
