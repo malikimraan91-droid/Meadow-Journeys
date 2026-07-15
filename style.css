@@ -25,6 +25,7 @@ color:white;
     object-fit: contain;
     margin-right: 8px;
 }
+}
 
 nav {
     display: flex;
@@ -118,7 +119,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex: 1;
 }
 
 .logo img {
@@ -134,8 +134,11 @@ nav {
     margin-top: 0;
 }
 
+}
+
 .hero h1{
 font-size:40px;
+}
 }
 .destinations,
 .packages{
@@ -312,4 +315,67 @@ text-align:center;
 
 .gallery-grid {
   grid-template-columns: 1fr;
+}
+
+.features,
+.testimonial-container,
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-box,
+.testimonial-card,
+.footer-box {
+  width: 90%;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+}
+.review-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: #25D366;
+}
+html {
+  scroll-behavior: smooth;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.card p{
+    padding:0 15px 20px;
 }
