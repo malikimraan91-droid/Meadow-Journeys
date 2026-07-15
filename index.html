@@ -359,6 +359,36 @@ function openLightbox(image){
 function closeLightbox(){
     document.getElementById("lightbox").style.display = "none";
 }
+        function openBookingPopup(){
+    document.getElementById("bookingPopup").style.display = "flex";
+}
+
+function closeBookingPopup(){
+    document.getElementById("bookingPopup").style.display = "none";
+}
+
+function sendBooking(){
+
+    let name = document.getElementById("bname").value;
+    let phone = document.getElementById("bphone").value;
+    let destination = document.getElementById("bdestination").value;
+    let date = document.getElementById("bdate").value;
+    let persons = document.getElementById("bpersons").value;
+    let message = document.getElementById("bmessage").value;
+
+    let text =
+    "🌄 New Booking Enquiry%0A%0A" +
+    "👤 Name: " + name + "%0A" +
+    "📞 Phone: " + phone + "%0A" +
+    "📍 Destination: " + destination + "%0A" +
+    "📅 Travel Date: " + date + "%0A" +
+    "👥 Travellers: " + persons + "%0A" +
+    "💬 Message: " + message;
+
+    window.open("https://wa.me/919622843919?text=" + text, "_blank");
+
+    closeBookingPopup();
+}
 </script>
 </body>
 </html>
