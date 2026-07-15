@@ -769,3 +769,30 @@ width:280px;
 border-radius:15px;
 box-shadow:0 10px 20px rgba(0,0,0,.1);
 }
+.cta{
+text-align:center;
+padding:50px 20px;
+background:#f1f8ff;
+border-radius:15px;
+margin:40px 20px;
+}
+
+.cta h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.cta p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.cta a{
+display:inline-block;
+padding:14px 30px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
