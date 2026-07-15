@@ -185,13 +185,13 @@ Family Tours and Adventure Trips.
 
 <div class="gallery-grid">
 
-<img src="aharbal waterfall.webp" alt="Aharbal Waterfall" loading="lazy">
+<img src="aharbal waterfall.webp" alt="Aharbal Waterfall" loading="lazy"> loading="lazy" onclick="openLightbox(this)">
 
-<img src="tulip garden.webp" alt="Tulip Garden" loading="lazy">
+<img src="tulip garden.webp" alt="Tulip Garden" loading="lazy"> loading="lazy" onclick="openLightbox(this)">
 
-<img src="dal lake.webp" alt="Dal Lake" loading="lazy">
+<img src="dal lake.webp" alt="Dal Lake" loading="lazy"> loading="lazy" onclick="openLightbox(this)">
 
-<img src="gulmarg.webp" alt="Gulmarg" loading="lazy">
+<img src="gulmarg.webp" alt="Gulmarg" loading="lazy"> loading="lazy" onclick="openLightbox(this)">
 
 </div>
 
@@ -294,6 +294,9 @@ comfortable stays, transportation and complete travel assistance.
 </div>
 
 </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+</div>
 <!-- Floating WhatsApp -->
 <a href="https://wa.me/919622843919" class="whatsapp">
   
@@ -328,7 +331,19 @@ function toggleMenu() {
         document.querySelector("nav").classList.remove("active");
 
     });
+function openLightbox(image){
 
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = image.src;
+    document.getElementById("lightbox-img").alt = image.alt;
+
+}
+
+function closeLightbox(){
+
+    document.getElementById("lightbox").style.display = "none";
+
+}
 });
 </script>
 </body>
