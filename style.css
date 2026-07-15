@@ -19,11 +19,16 @@ background:#0b3d91;
 color:white;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .logo img {
     width: 55px;
     height: 55px;
     object-fit: contain;
-    margin-right: 8px;
 }
 }
 
