@@ -363,7 +363,9 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openHoneymoon()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -848,7 +850,35 @@ function openDetails(){
 function closeDetails(){
     document.getElementById("detailsPopup").style.display="none";
 }
+function openHoneymoon(){
 
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>💑 Honeymoon Special</h2>
+
+<p>🗓️ 5 Nights / 6 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Pahalgam • Sonmarg</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Romantic Hotel Stay</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Honeymoon Decorations Available</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
 </script>
 
 
