@@ -704,8 +704,15 @@ nav a{
 
 .booking-box input[type="date"]{
     width:100%;
-    min-height:48px;
+    height:52px;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
     font-size:16px;
+    box-sizing:border-box;
+    background:#fff;
+    color:#333;
 }
 .review-slider{
     overflow:hidden;
