@@ -872,81 +872,161 @@ color:#0b3d91;
 color:#555;
 line-height:1.6;
 }
-/* Premium Tour Packages */
+/* ===========================
+   PREMIUM TOUR PACKAGES V2
+=========================== */
 
 .packages{
-padding:70px 20px;
-background:#f8fbff;
-text-align:center;
+    padding:80px 20px;
+    background:#f7f9fc;
+}
+
+.packages h2{
+    text-align:center;
+    font-size:38px;
+    color:#0b3d91;
+    margin-bottom:50px;
 }
 
 .packages .cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    max-width:1400px;
+    margin:auto;
 }
 
 .packages .card{
-background:#fff;
-width:340px;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.12);
-transition:.3s;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    transition:.35s ease;
+    position:relative;
 }
 
 .packages .card:hover{
-transform:translateY(-10px);
-box-shadow:0 18px 35px rgba(0,0,0,.18);
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 }
 
 .packages .card img{
-width:100%;
-height:220px;
-object-fit:cover;
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
 }
 
 .packages .card h3{
-margin:18px 0 10px;
-font-size:24px;
-color:#0b3d91;
+    font-size:27px;
+    color:#0b3d91;
+    padding:20px 22px 10px;
 }
 
 .packages .card p{
-padding:0 18px;
-margin:8px 0;
-line-height:1.6;
+    padding:0 22px;
+    margin:10px 0;
+    font-size:16px;
+    color:#555;
+    line-height:1.7;
 }
 
 .packages .card h4{
-margin:20px 0;
-font-size:24px;
-color:#0a8f3d;
+    color:#0a8f3d;
+    font-size:28px;
+    padding:15px 22px;
 }
 
 .packages .btn{
-display:inline-block;
-margin-bottom:25px;
-padding:12px 28px;
-background:#0b3d91;
+    display:block;
+    width:calc(100% - 44px);
+    margin:0 22px 25px;
+    text-align:center;
+    background:#0b3d91;
+    color:#fff;
+    text-decoration:none;
+    padding:14px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.packages .btn:hover{
+    background:#082d6b;
+}
+/* ===== Premium Package Badges ===== */
+
+.package-badge{
+position:absolute;
+top:15px;
+right:15px;
+background:#ff9800;
 color:#fff;
-text-decoration:none;
+padding:8px 14px;
+font-size:13px;
+font-weight:700;
 border-radius:30px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+z-index:10;
+}
+
+.package-rating{
+padding:0 22px;
+font-size:18px;
+color:#f4b400;
+margin-top:5px;
+margin-bottom:10px;
+}
+
+.package-buttons{
+display:flex;
+gap:12px;
+padding:0 22px 25px;
+}
+
+.package-buttons .btn{
+margin:0;
+flex:1;
+}
+
+.details-btn{
+background:#f1f5f9;
+color:#0b3d91;
+border:2px solid #0b3d91;
+text-decoration:none;
+padding:14px;
+text-align:center;
+border-radius:12px;
 font-weight:600;
 transition:.3s;
 }
 
-.packages .btn:hover{
-background:#082d6b;
+.details-btn:hover{
+background:#0b3d91;
+color:#fff;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.packages .card{
-width:100%;
-max-width:350px;
+.packages{
+padding:60px 15px;
+}
+
+.packages h2{
+font-size:30px;
+}
+
+.packages .cards{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.packages .card img{
+height:220px;
+}
+
+.package-buttons{
+flex-direction:column;
 }
 
 }
