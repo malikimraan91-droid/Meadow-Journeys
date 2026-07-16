@@ -755,19 +755,39 @@ padding:50px 20px;
 }
 
 .about-points{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .about-points div{
-background:white;
-padding:25px;
-width:280px;
-border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.1);
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border:1px solid #eef2f7;
+}
+
+.about-points div:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.about-points h3{
+color:#0b3d91;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.about-points p{
+color:#555;
+line-height:1.7;
+font-size:16px;
 }
 .cta{
 text-align:center;
