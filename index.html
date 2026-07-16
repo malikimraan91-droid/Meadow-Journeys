@@ -324,7 +324,9 @@ Book Your Trip Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openDetails()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -809,5 +811,31 @@ function sendBooking(){
     closeBookingPopup();
 }
 </script>
+    <div id="detailsPopup" class="details-popup">
+
+<div class="details-box">
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>🌿 Kashmir Delight</h2>
+
+<p>🗓️ 4 Nights / 5 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Pahalgam</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Hotel Stay</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+</div>
+
+</div>
 </body>
 </html>
