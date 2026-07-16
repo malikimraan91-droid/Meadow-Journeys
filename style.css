@@ -714,6 +714,9 @@ nav a{
     background:#fff;
     color:#333;
 }
+.booking-box input[type="text"]{
+    height:52px;
+}
 .review-slider{
     overflow:hidden;
     width:100%;
