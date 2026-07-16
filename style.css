@@ -717,7 +717,7 @@ nav a{
     gap:25px;
     flex-wrap:nowrap;
     justify-content:flex-start;
-    animation:reviewSlide 15s linear infinite;
+    animation:reviewSlide 40s linear infinite;
 }
 
 .review-slider .cards:hover{
