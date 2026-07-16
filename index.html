@@ -324,7 +324,7 @@ Book Your Trip Now
 
 <div class="package-buttons">
 
-<a href="javascript:void(0)" class="details-btn" onclick="openDetails()">
+<a href="javascript:void(0)" class="details-btn" onclick="openKashmirDelight()">
 View Details
 </a>
 
@@ -401,7 +401,9 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openFamily()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -437,7 +439,9 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openWinter()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -473,7 +477,9 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openTulip()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -509,7 +515,9 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openAdventure()">
+View Details
+</a>
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -545,7 +553,8 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openBudget()">
+View Details
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -581,7 +590,8 @@ Book Now
 
 <div class="package-buttons">
 
-<a href="#" class="details-btn">View Details</a>
+<a href="javascript:void(0)" class="details-btn" onclick="openLuxury()">
+View Details
 
 <a href="https://wa.me/919622843919" class="btn" target="_blank">
 Book Now
@@ -869,6 +879,180 @@ document.querySelector(".details-box").innerHTML = `
 <p>✔️ Honeymoon Decorations Available</p>
 <p>✔️ Sightseeing</p>
 <p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openFamily(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>👨‍👩‍👧 Family Package</h2>
+
+<p>🗓️ 6 Nights / 7 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Sonmarg • Pahalgam</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Deluxe Hotel Stay</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Complete Sightseeing</p>
+<p>✔️ Family Friendly Itinerary</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openWinter(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>❄️ Winter Wonderland</h2>
+
+<p>🗓️ 5 Nights / 6 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Sonmarg</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Hotel Stay Included</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Snow Activities Assistance</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openTulip(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>🌷 Tulip Festival Tour</h2>
+
+<p>🗓️ 4 Nights / 5 Days</p>
+
+<p>📍 Srinagar • Tulip Garden • Gulmarg • Pahalgam</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Hotel Stay Included</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Tulip Garden Visit</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openAdventure(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>🏔️ Gulmarg Adventure</h2>
+
+<p>🗓️ 4 Nights / 5 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Drung • Tangmarg</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Hotel Stay Included</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Adventure Activities Assistance</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openBudget(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>💰 Budget Kashmir Tour</h2>
+
+<p>🗓️ 3 Nights / 4 Days</p>
+
+<p>📍 Srinagar • Gulmarg</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Budget Hotel Stay</p>
+<p>✔️ Private Cab</p>
+<p>✔️ Sightseeing</p>
+<p>✔️ Comfortable Travel</p>
+<p>✔️ 24/7 Travel Assistance</p>
+
+<a href="https://wa.me/919622843919" target="_blank" class="btn">
+Book Now
+</a>
+
+`;
+
+document.getElementById("detailsPopup").style.display="flex";
+
+}
+    function openLuxury(){
+
+document.querySelector(".details-box").innerHTML = `
+
+<span onclick="closeDetails()" class="close-details">×</span>
+
+<h2>👑 Luxury Kashmir Escape</h2>
+
+<p>🗓️ 6 Nights / 7 Days</p>
+
+<p>📍 Srinagar • Gulmarg • Pahalgam • Sonmarg</p>
+
+<h3>Package Includes:</h3>
+
+<p>✔️ Luxury Hotel Stay</p>
+<p>✔️ Premium Private Cab</p>
+<p>✔️ VIP Travel Assistance</p>
+<p>✔️ Complete Sightseeing</p>
+<p>✔️ Dedicated 24/7 Support</p>
 
 <a href="https://wa.me/919622843919" target="_blank" class="btn">
 Book Now
