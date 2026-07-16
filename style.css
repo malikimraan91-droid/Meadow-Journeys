@@ -1248,3 +1248,29 @@ font-size:15px;
     box-sizing:border-box;
     background:#fff;
 }
+@media (max-width:768px){
+
+.booking-box{
+    width:90%;
+    max-width:400px;
+    box-sizing:border-box;
+}
+
+.booking-box input,
+.booking-box select,
+.booking-box textarea{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+.flatpickr-calendar{
+    max-width:100vw !important;
+}
+
+.flatpickr-input{
+    width:100% !important;
+    box-sizing:border-box;
+}
+
+}
