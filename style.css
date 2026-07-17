@@ -1274,3 +1274,15 @@ font-size:15px;
 }
 
 }
+.flatpickr-wrapper{
+    width:100% !important;
+    display:block !important;
+}
+
+.flatpickr-wrapper input{
+    width:100% !important;
+}
+
+#bdate{
+    width:100% !important;
+}
