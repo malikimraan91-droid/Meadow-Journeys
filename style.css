@@ -124,11 +124,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 10px;
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 nav {
@@ -405,8 +407,8 @@ html {
   }
 
   .logo img {
-    width: 42px;
-    height: 42px;
+    width: 56px;
+    height: 56px;
   }
 
   nav {
