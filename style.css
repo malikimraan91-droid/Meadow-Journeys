@@ -1291,7 +1291,7 @@ font-size:15px;
 .logo{
     display:flex !important;
     align-items:center !important;
-    gap:12px !important;
+    gap:08px !important;
 }
 
 .logo img{
@@ -1317,11 +1317,11 @@ header{
 }
 
 .logo span{
-    font-size:30px !important;
+    font-size:20px !important;
     font-weight:700 !important;
     color:#fff !important;
 }
 
 .menu-toggle{
-    font-size:36px !important;
+    font-size:32px !important;
 }
