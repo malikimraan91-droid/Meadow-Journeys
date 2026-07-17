@@ -1307,3 +1307,21 @@ font-size:15px;
     letter-spacing:0.5px;
     font-family:'Poppins', sans-serif;
 }
+header{
+    padding:18px 20px !important;
+}
+
+.logo img{
+    width:70px !important;
+    height:70px !important;
+}
+
+.logo span{
+    font-size:30px !important;
+    font-weight:700 !important;
+    color:#fff !important;
+}
+
+.menu-toggle{
+    font-size:36px !important;
+}
