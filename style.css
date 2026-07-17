@@ -1288,3 +1288,22 @@ font-size:15px;
 #bdate{
     width:100% !important;
 }
+.logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:12px !important;
+}
+
+.logo img{
+    width:60px !important;
+    height:60px !important;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:28px !important;
+    font-weight:700 !important;
+    color:#ffffff !important;
+    letter-spacing:0.5px;
+    font-family:'Poppins', sans-serif;
+}
