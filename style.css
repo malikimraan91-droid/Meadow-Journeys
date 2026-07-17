@@ -1351,3 +1351,19 @@ header{
 }
 
 }
+.reviews{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:38px;
+    margin-bottom:35px;
+    color:#0b3d91;
+    font-weight:700;
+}
+
+.elfsight-app-6d549362-37dd-4332-ae1c-5ca0ca0e8c38{
+    max-width:1200px;
+    margin:0 auto;
+}
