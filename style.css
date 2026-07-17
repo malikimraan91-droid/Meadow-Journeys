@@ -1325,3 +1325,29 @@ header{
 .menu-toggle{
     font-size:32px !important;
 }
+@media (max-width:768px){
+
+.hero{
+    height:85vh;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:44px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.5;
+    margin-bottom:28px;
+}
+
+.hero .btn{
+    padding:14px 34px;
+    font-size:20px;
+    border-radius:30px;
+}
+
+}
