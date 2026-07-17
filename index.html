@@ -1191,7 +1191,9 @@ stats.forEach(stat=>observer.observe(stat));
 <script>
 flatpickr("#bdate", {
     dateFormat: "d M Y",
-    minDate: "today"
+    minDate: "today",
+    disableMobile: true,
+    static: true
 });
 </script>
 </body>
