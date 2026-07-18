@@ -1390,3 +1390,33 @@ header{
     max-width:1200px;
     margin:0 auto;
 }
+.package-types{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.package-types h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.package-types > p{
+    max-width:800px;
+    margin:0 auto 30px;
+    line-height:1.7;
+}
+
+.package-types .about-points{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.package-types .about-points > div{
+    background:white;
+    padding:25px;
+    width:300px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
