@@ -1480,3 +1480,45 @@ header{
     border-radius:15px;
     box-shadow:0 10px 20px rgba(0,0,0,.1);
 }
+/* SEO FAQ Section */
+
+.seo-faq{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.seo-faq h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.seo-faq .faq-box{
+    max-width:900px;
+    margin:0 auto;
+    text-align:left;
+}
+
+.seo-faq .faq-box h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:22px;
+    color:#0b3d91;
+}
+
+.seo-faq .faq-box p{
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#555;
+}
+
+@media (max-width:768px){
+
+.seo-faq h2{
+    font-size:26px;
+}
+
+.seo-faq .faq-box h3{
+    font-size:20px;
+}
+
+}
