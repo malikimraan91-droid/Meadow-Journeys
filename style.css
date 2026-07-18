@@ -1522,3 +1522,54 @@ header{
 }
 
 }
+/* SEO Intro */
+
+.seo-intro{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.seo-intro h1{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#0b3d91;
+}
+
+.seo-intro p{
+    max-width:900px;
+    margin:0 auto 20px;
+    line-height:1.8;
+}
+
+/* Why Choose Our Kashmir Tour Packages */
+
+.why-kashmir{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.why-kashmir h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.why-kashmir > p{
+    max-width:900px;
+    margin:0 auto 30px;
+    line-height:1.8;
+}
+
+.why-kashmir .about-points{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.why-kashmir .about-points > div{
+    background:#fff;
+    padding:25px;
+    width:300px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
