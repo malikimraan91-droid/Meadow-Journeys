@@ -1578,3 +1578,40 @@ header{
     justify-content:center;
     margin-top:40px;
 }
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.hero-buttons .btn{
+    display:inline-block;
+}
+
+.btn-outline{
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#0b3d91;
+}
+
+@media (max-width:768px){
+
+.hero-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero-buttons .btn{
+    width:260px;
+    text-align:center;
+}
+
+}
