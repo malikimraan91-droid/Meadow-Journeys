@@ -1573,3 +1573,8 @@ header{
     border-radius:15px;
     box-shadow:0 10px 20px rgba(0,0,0,.1);
 }
+.view-all-packages{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
