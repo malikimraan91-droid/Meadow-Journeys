@@ -39,10 +39,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 
     <noscript>
         <link rel="stylesheet"
@@ -52,21 +50,7 @@
     <!-- Landing Page CSS -->
     <link rel="stylesheet" href="kashmir-booking.css">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJPG5Y3PRT"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag(){
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-LJPG5Y3PRT');
-    </script>
-
+   
 </head>
 
 <body>
@@ -1279,5 +1263,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+    <script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+
+        var script = document.createElement("script");
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-LJPG5Y3PRT";
+        script.async = true;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-LJPG5Y3PRT");
+
+    }, 3000);
+});
+</script>
+</body>
+</html>
 </body> 
 </html>
