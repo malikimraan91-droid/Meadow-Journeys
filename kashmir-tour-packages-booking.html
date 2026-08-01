@@ -1116,5 +1116,96 @@ document.getElementById("kashmirLeadForm").addEventListener("submit", function(e
         <span>WhatsApp</span>
     </a>
 </div>
+    <!-- GET FREE QUOTE POPUP -->
+<div class="quote-popup" id="quotePopup">
+    <div class="quote-popup-overlay"></div>
+    <div class="quote-popup-box">
+        <button
+            type="button"
+            class="quote-popup-close"
+            id="quotePopupClose"
+            aria-label="Close quote form">
+            ×
+        </button>
+        <div class="quote-popup-header">
+            <p class="section-label">GET YOUR FREE QUOTE</p>
+            <h2>Plan Your Kashmir Trip</h2>
+            <p>
+                Tell us a few details and we'll help you plan
+                your Kashmir holiday.
+            </p>
+        </div>
+        <form id="popupLeadForm">
+            <div class="popup-form-group">
+                <label for="popupName">Full Name</label>
+                <input
+                    type="text"
+                    id="popupName"
+                    placeholder="Enter your name"
+                    required>
+            </div>
+            <div class="popup-form-group">
+                <label for="popupPhone">WhatsApp Number</label>
+                <input
+                    type="tel"
+                    id="popupPhone"
+                    placeholder="Enter your WhatsApp number"
+                    inputmode="tel"
+                    required>
+            </div>
+            <div class="popup-form-row">
+                <div class="popup-form-group">
+                    <label for="popupDate">Travel Date</label>
+                    <input
+                        type="date"
+                        id="popupDate">
+                </div>
+                <div class="popup-form-group">
+                    <label for="popupTravellers">Travellers</label>
+                    <select id="popupTravellers">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8+">8+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popup-form-group">
+                <label for="popupPackage">Preferred Package</label>
+                <select id="popupPackage">
+                    <option value="">Select a package</option>
+                    <option value="Kashmir Delight">
+                        Kashmir Delight
+                    </option>
+                    <option value="Honeymoon Special">
+                        Honeymoon Special
+                    </option>
+                    <option value="Family Package">
+                        Family Package
+                    </option>
+                    <option value="Budget Kashmir Tour">
+                        Budget Kashmir Tour
+                    </option>
+                    <option value="Customized Package">
+                        Customized Package
+                    </option>
+                </select>
+            </div>
+            <button
+                type="submit"
+                class="popup-submit-btn">
+                💬 Get My Free Quote
+            </button>
+            <p class="popup-note">
+                🔒 Your details are used only for your travel enquiry.
+            </p>
+        </form>
+    </div>
+</div>
 </body>    
 </html>
