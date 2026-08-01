@@ -1190,3 +1190,85 @@ textarea {
         font-size: 13px;
     }
 }
+/* =========================================================
+   SMALL RIGHT-SIDE QUOTE POPUP
+   ========================================================= */
+.quote-popup {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 25px;
+}
+.quote-popup-box {
+    width: 380px;
+    max-width: calc(100vw - 40px);
+    max-height: 88vh;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.quote-popup-header {
+    margin-bottom: 16px;
+}
+.quote-popup-header h2 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+.quote-popup-header p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+.popup-form-group {
+    margin-bottom: 12px;
+}
+.popup-form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.popup-form-group input,
+.popup-form-group select {
+    min-height: 42px;
+    padding: 9px 11px;
+    font-size: 13px;
+}
+.popup-submit-btn {
+    min-height: 46px;
+    font-size: 14px;
+}
+.popup-note {
+    font-size: 10px;
+    margin-top: 9px;
+}
+.quote-popup-close {
+    width: 32px;
+    height: 32px;
+    top: 9px;
+    right: 9px;
+    font-size: 23px;
+}
+/* MOBILE */
+@media (max-width: 700px) {
+    .quote-popup {
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+    }
+    .quote-popup-box {
+        width: 100%;
+        max-width: 360px;
+        max-height: 82vh;
+        padding: 20px 16px;
+        margin: 0;
+        border-radius: 15px;
+    }
+    .quote-popup-header h2 {
+        font-size: 20px;
+    }
+    .quote-popup-header p {
+        font-size: 12px;
+    }
+    .popup-form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
