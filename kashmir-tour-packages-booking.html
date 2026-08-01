@@ -1020,33 +1020,6 @@
     </div>
 
 </section>
-  <script>
-document.getElementById("kashmirLeadForm").addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    const name = document.getElementById("leadName").value.trim();
-    const phone = document.getElementById("leadPhone").value.trim();
-    const travelDate = document.getElementById("travelDate").value;
-    const travellers = document.getElementById("travellers").value;
-    const packageChoice = document.getElementById("packageChoice").value;
-    const message = document.getElementById("leadMessage").value.trim();
-
-    const whatsappMessage =
-        "🌄 New Kashmir Tour Enquiry%0A%0A" +
-        "👤 Name: " + encodeURIComponent(name) + "%0A" +
-        "📞 WhatsApp: " + encodeURIComponent(phone) + "%0A" +
-        "📅 Travel Date: " + encodeURIComponent(travelDate || "Not specified") + "%0A" +
-        "👥 Travellers: " + encodeURIComponent(travellers || "Not specified") + "%0A" +
-        "📦 Package: " + encodeURIComponent(packageChoice || "Not specified") + "%0A" +
-        "💬 Requirements: " + encodeURIComponent(message || "Not specified");
-
-    const whatsappURL =
-        "https://wa.me/919622843919?text=" + whatsappMessage;
-
-    window.open(whatsappURL, "_blank");
-
-});
       <!-- FOOTER SECTION -->
 <footer class="site-footer">
     <div class="footer-container">
@@ -1096,5 +1069,32 @@ document.getElementById("kashmirLeadForm").addEventListener("submit", function(e
         </p>
     </div>
 </footer>
+  <script>
+document.getElementById("kashmirLeadForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("leadName").value.trim();
+    const phone = document.getElementById("leadPhone").value.trim();
+    const travelDate = document.getElementById("travelDate").value;
+    const travellers = document.getElementById("travellers").value;
+    const packageChoice = document.getElementById("packageChoice").value;
+    const message = document.getElementById("leadMessage").value.trim();
+
+    const whatsappMessage =
+        "🌄 New Kashmir Tour Enquiry%0A%0A" +
+        "👤 Name: " + encodeURIComponent(name) + "%0A" +
+        "📞 WhatsApp: " + encodeURIComponent(phone) + "%0A" +
+        "📅 Travel Date: " + encodeURIComponent(travelDate || "Not specified") + "%0A" +
+        "👥 Travellers: " + encodeURIComponent(travellers || "Not specified") + "%0A" +
+        "📦 Package: " + encodeURIComponent(packageChoice || "Not specified") + "%0A" +
+        "💬 Requirements: " + encodeURIComponent(message || "Not specified");
+
+    const whatsappURL =
+        "https://wa.me/919622843919?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
+
+});
 </script>
 </html>
