@@ -1239,9 +1239,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Automatically open popup after 10 seconds
-    setTimeout(function() {
+   setTimeout(function() {
+
+    if (!sessionStorage.getItem("kashmirQuotePopupShown")) {
+
         quotePopup.classList.add("active");
-    }, 10000);
+
+        sessionStorage.setItem("kashmirQuotePopupShown", "true");
+
+    }
+
+}, 10000);
     
 // POPUP FORM → WHATSAPP
 
