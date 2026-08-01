@@ -1096,6 +1096,22 @@ document.getElementById("kashmirLeadForm").addEventListener("submit", function(e
     window.open(whatsappURL, "_blank");
 
 });
+      const quotePopup = document.getElementById("quotePopup");
+const openQuotePopup = document.getElementById("openQuotePopup");
+const quotePopupClose = document.getElementById("quotePopupClose");
+const quotePopupOverlay = document.querySelector(".quote-popup-overlay");
+
+openQuotePopup.addEventListener("click", function() {
+    quotePopup.classList.add("active");
+});
+
+quotePopupClose.addEventListener("click", function() {
+    quotePopup.classList.remove("active");
+});
+
+quotePopupOverlay.addEventListener("click", function() {
+    quotePopup.classList.remove("active");
+});
 </script>
   <!-- FLOATING CONTACT BUTTONS -->
 <div class="floating-contact">
