@@ -1238,11 +1238,37 @@ document.addEventListener("DOMContentLoaded", function() {
         quotePopup.classList.remove("active");
     });
 
-    // Automatically open popup after 5 seconds
+    // Automatically open popup after 10 seconds
     setTimeout(function() {
         quotePopup.classList.add("active");
     }, 10000);
+    
+// POPUP FORM → WHATSAPP
 
+    document.getElementById("popupLeadForm").addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("popupName").value.trim();
+        const phone = document.getElementById("popupPhone").value.trim();
+        const travelDate = document.getElementById("popupDate").value;
+        const travellers = document.getElementById("popupTravellers").value;
+        const packageChoice = document.getElementById("popupPackage").value;
+
+        const popupMessage =
+            "🌄 New Kashmir Tour Enquiry%0A%0A" +
+            "👤 Name: " + encodeURIComponent(name) + "%0A" +
+            "📞 WhatsApp: " + encodeURIComponent(phone) + "%0A" +
+            "📅 Travel Date: " + encodeURIComponent(travelDate || "Not specified") + "%0A" +
+            "👥 Travellers: " + encodeURIComponent(travellers || "Not specified") + "%0A" +
+            "📦 Package: " + encodeURIComponent(packageChoice || "Not specified");
+
+        const popupWhatsAppURL =
+            "https://wa.me/919622843919?text=" + popupMessage;
+
+        window.open(popupWhatsAppURL, "_blank");
+
+    });
 });
 </script>
 </body> 
